@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "edumfa"
+version = "2.0.2"
+description = "eduMFA: identity, multifactor authentication (OTP), authorization, audit"
+authors = ["eduMFA Project <edumfa@listserv.dfn.de>"]
+license = "AGPLv3"
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+flask-babel = ">=4.0.0"
+Flask-Migrate = ">=4.0.7"
+flask-sqlalchemy = ">=3.1.1"
+Flask-Versioned = ">=0.9.4"
+flask = ">=3.0"
+pyjwt = ">=2.8.0"
+pymysql = ">=1.1.0"
+sqlalchemy = ">=2.0.29"
+argon2_cffi = ">=20.1.0"
+beautifulsoup4 = {version = ">=4.12.3", extras = ["lxml"]}
+ldap3 = ">=2.6"
+netaddr = ">=1.2.1"
+pyopenssl = ">=24"
+urllib3 = ">=2.2.1"
+importlib-metadata = ">=7.1.0"
+passlib = {extras = ["bcrypt"], version = ">=1.7.4"}
+cbor2 = ">=5.6.3"
+configobj = ">=5.0.8"
+croniter = ">=2.0.3"
+cryptography = ">=42.0.5"
+defusedxml = ">=0.7.1"
+google-auth = ">=2.29.0"
+grpcio = ">=1.62.1"
+huey = {extras = ["redis"], version = ">=2.5.0"}
+lxml = ">=5.2.1"
+pydash = ">=8.0.0"
+pyrad = ">=2.4"
+python-dateutil = ">=2.9.0.post0"
+python-gnupg = ">=0.5.2"
+requests = ">=2.31.0"
+segno = ">=1.6.1"
+smpplib = ">=2.2.3"
+typing-extensions = ">=4.11.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.1.1"
+pytest-cov = ">=5.0.0"
+responses = ">=0.25.0"
+testfixtures = ">=8.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
